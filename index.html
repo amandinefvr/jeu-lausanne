@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Énigme n°1</title>
+</head>
+<body>
+
+    <h1>Énigme n°1</h1>
+    <p>Je suis grand quand je suis jeune et petit quand je suis vieux. Qui suis-je ?</p>
+
+    <input type="text" id="reponseUtilisateur" placeholder="Ta réponse ici...">
+    <button onclick="verifierReponse()">Valider</button>
+
+    <p id="messageError" style="color: red;"></p>
+
+    <script>
+        function verifierReponse() {
+            // On récupère la réponse et on la met en minuscules
+            const reponse = document.getElementById("reponseUtilisateur").value.toLowerCase();
+            const solution = "une bougie"; // La réponse attendue
+
+            if (reponse === solution) {
+                // Redirection vers la page de l'énigme suivante
+                window.location.href = "enigme2.html";
+            } else {
+                document.getElementById("messageError").innerText = "Dommage ! Essaie encore.";
+            }
+        }
+    </script>
+
+</body>
+</html>
