@@ -7,8 +7,8 @@
 <body>
 
     <h1>Énigme n°1</h1>
-    <p>Je suis grand quand je suis jeune et petit quand je suis vieux. Qui suis-je ?</p>
-    <p> Indice: La réponse est une bougie</p>
+    <p> Au commande pendant tes études. Qui suis-je ? </p>
+    <p> Indice: La réponse est Martin Vetterli </p>
 
     <input type="text" id="reponseUtilisateur" placeholder="Ta réponse ici...">
     <button onclick="verifierReponse()">Valider</button>
@@ -19,7 +19,7 @@
         function verifierReponse() {
             // On récupère la réponse et on la met en minuscules
             const reponse = document.getElementById("reponseUtilisateur").value.toLowerCase();
-            const solution = "une bougie"; // La réponse attendue
+            const solution = "martin vetterli"; // La réponse attendue
 
             if (reponse === solution) {
                 // Redirection vers la page de l'énigme suivante
