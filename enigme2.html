@@ -7,8 +7,9 @@
 <body>
 
     <h1>Énigme n°2</h1>
-    <p>Sainte carte qui donne la victoire à la coinche</p>
-    <p> Indice: La réponse est le 8 de carreau</p>
+    <p> Rendez-vous à la Cathédrale de Lausanne afin de continuer votre quête. Une fois devant ce grand édifice, vous pourrez trouver l'année pendant laquelle elle a reçu son titre de "Notre-Dame". Il vous faudra additionner cette année au numéro de la Sainte carte qui donne la victoire à la coinche pour trouver la solution de cette enigme </p>
+
+    <p> Indice: 1275 + 8 de carreau. La réponse est 1283 </p>
 
     <input type="text" id="reponseUtilisateur" placeholder="Ta réponse ici...">
     <button onclick="verifierReponse()">Valider</button>
@@ -19,7 +20,7 @@
         function verifierReponse() {
             // On récupère la réponse et on la met en minuscules
             const reponse = document.getElementById("reponseUtilisateur").value.toLowerCase();
-            const solution = "le 8 de carreau"; // La réponse attendue
+            const solution = "1283"; // La réponse attendue
 
             if (reponse === solution) {
                 // Redirection vers la page de l'énigme suivante
