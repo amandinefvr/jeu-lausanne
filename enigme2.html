@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Énigme n°2</title>
+</head>
+<body>
 
+    <h1>Énigme n°2</h1>
+    <p>Sainte carte qui donne la victoire à la coinche</p>
+    <p> Indice: La réponse est le 8 de carreau</p>
+
+    <input type="text" id="reponseUtilisateur" placeholder="Ta réponse ici...">
+    <button onclick="verifierReponse()">Valider</button>
+
+    <p id="messageError" style="color: red;"></p>
+
+    <script>
+        function verifierReponse() {
+            // On récupère la réponse et on la met en minuscules
+            const reponse = document.getElementById("reponseUtilisateur").value.toLowerCase();
+            const solution = "le 8 de carreau"; // La réponse attendue
+
+            if (reponse === solution) {
+                // Redirection vers la page de l'énigme suivante
+                window.location.href = "index.html";
+            } else {
+                document.getElementById("messageError").innerText = "Dommage ! Essaie encore.";
+            }
+        }
+    </script>
+
+</body>
+</html>
